@@ -1,0 +1,59 @@
+<h1 id="headline">control-statement-example</h1>
+<p class="mytext">
+A structural directive that conditionally includes a template based on the value of an expression coerced to Boolean. 
+When the expression evaluates to true, Angular renders the template provided in a then clause,
+and when false or null, Angular renders the template provided in an optional else clause.
+The default template for the else clause is blank.
+</p>
+<button (click)="changevisibility()">Change Visibility</button>
+
+<h4>if condition</h4>
+
+
+<span>{{ifcode}}</span>
+
+@if(show){
+    <h3>Kalaivani G</h3>
+}
+
+<h4>if else condition</h4>
+
+<span>{{ifelsecode}}</span>
+
+@if(show)
+{
+    <h3>Kalaivani G</h3>
+}
+@else
+{
+    <h3>User name is protected</h3>
+}
+
+<h4>switch statement</h4>
+
+<span>{{switchcode}}</span>
+<br>
+Enter Switch case to be executed : <input type="text" [(ngModel)]="switchvalue">
+<br>
+
+@switch(switchvalue)
+{
+    @case('if'){
+      <p class="mytext">
+       <span>IF STATEMENT<br></span>
+      if statement is a selection statement that allows more than one possible flow of control
+      </p>
+    }
+    @case('if-else'){
+        <p class="mytext">
+<span>IF-ELSE STATEMENT<br></span>
+The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed.
+        </p>
+    }
+    @case('switch'){
+        <p class="mytext">
+<span>SWITCH STATEMENT<br></span>
+The switch statement is the control statement that allows any value to change the control of the execution
+        </p>
+    }
+}

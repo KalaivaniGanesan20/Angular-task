@@ -1,0 +1,33 @@
+h1{
+    text-transform:capitalize;
+    text-align:  center;
+}
+h4{
+    color: whitesmoke;
+    background-color: rgb(59, 59, 97);
+    padding: 5px;
+    width:30%;
+    border-radius: 10px;
+    text-align:right;
+    text-transform:capitalize;
+    text-decoration:underline;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span
+{
+    color:blue;
+    font-size:18px;
+    font-weight: bolder;
+}
+
+.mytext
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+#headline
+{
+    text-decoration: underline;
+}

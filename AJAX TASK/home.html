@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+   #demo
+   {
+      font-weight: bold;
+      margin-top: 10px;
+      color:blue;
+   }
+</style>
+<h1>AJAX TASK</h1>
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<div id="demo">
+</div>
+
+<script type="text/javascript">
+function loadDoc() {
+   var xmlHttpRequest=new XMLHttpRequest();
+   xmlHttpRequest.open('GET','https://jsonplaceholder.typicode.com/posts/1',true);
+   xmlHttpRequest.onreadystatechange=function()
+   {
+      if(xmlHttpRequest.readyState==4 && xmlHttpRequest.status==200)
+      {
+         var data=JSON.parse(xmlHttpRequest.responseText);
+         document.getElementById('demo').innerHTML=data.title
+      }
+   };
+   xmlHttpRequest.send();
+   
+}
+</script>
+
+</body>
+</html>

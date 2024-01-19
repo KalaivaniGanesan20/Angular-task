@@ -1,0 +1,29 @@
+.nav
+{
+    background-color: rgb(68, 68, 95);
+    padding:5px;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    width:30%;
+}
+li{
+    background-color: rgb(57, 57, 112);
+    margin-bottom: 10px;
+    padding: 10px;
+    color: whitesmoke;
+    text-wrap: nowrap;
+}
+.image{
+    width:75%;
+    height: 75%;
+    margin-left:10%;
+}
+.content
+{
+    display:flex;
+    flex-direction:row;
+}
